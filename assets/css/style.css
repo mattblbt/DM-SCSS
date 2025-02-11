@@ -1,0 +1,249 @@
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-menu ul li {
+  margin-left: 20px;
+}
+.nav-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.nav-menu ul li a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.slide-in {
+  animation: slideIn 0.8s ease-out;
+}
+
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projet-grid {
+    grid-template-columns: 1fr;
+  }
+  .accueil img {
+    width: 120px;
+    height: 120px;
+  }
+  .contact form {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .projet-card {
+    padding: 10px;
+  }
+}
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #512bdc;
+  color: #fff;
+  padding: 20px 0;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+header nav ul li {
+  margin-left: 20px;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.accueil {
+  padding: 50px 0;
+  text-align: center;
+}
+.accueil img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.projets {
+  padding: 50px 0;
+}
+.projets .projet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.projets .projet-grid .projet-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.projets .projet-grid .projet-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.projets .projet-grid .projet-card .btn {
+  background-color: #512bdc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.projets .projet-grid .projet-card .btn:hover {
+  background-color: rgb(62.6558704453, 30.04048583, 181.95951417);
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.carousel .carousel-item {
+  display: none;
+  text-align: center;
+  transition: opacity 0.5s ease-in-out;
+}
+.carousel .carousel-item.active {
+  display: block;
+  opacity: 1;
+}
+.carousel .carousel-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+.carousel .carousel-item h3 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+.carousel .carousel-item p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+.carousel .carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+.carousel .carousel-control.prev {
+  left: 10px;
+}
+.carousel .carousel-control.next {
+  right: 10px;
+}
+
+.competences {
+  padding: 50px 0;
+}
+.competences .skill {
+  margin-bottom: 20px;
+}
+.competences .skill .progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.competences .skill .progress-bar .progress {
+  background-color: #512bdc;
+  height: 10px;
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+}
+
+.contact {
+  padding: 50px 0;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+.contact form label {
+  margin-bottom: 10px;
+}
+.contact form input, .contact form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact form .btn {
+  background-color: #512bdc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact form .btn:hover {
+  background-color: rgb(62.6558704453, 30.04048583, 181.95951417);
+}
+
+footer {
+  background-color: #512bdc;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/*# sourceMappingURL=style.css.map */

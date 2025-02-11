@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Mattéo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mon Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- <button class="theme-toggle" aria-label="Changer de thème">🌙</button> -->
+        </div>
+    </header>
+
+    <section id="accueil" class="accueil">
+        <div class="container">
+            <div class="presentation">
+                <img src="assets/img/Capture_d_écran_2025-02-10_183647-removebg-preview.png" alt="Ma photo de profil">
+                <h2>Bonjour, je suis Bellebault Mattéo</h2>
+                <p>Je suis étudiant en deuxième année de Bachelor Social Web Marketing à La
+                    Manu.
+                    Avec ces deux premières années de Bachelor, j'ai appris en Design UX/UI,
+                    Développement web, Culture graphique. Chaque projet réalisé reflète ma
+                    créativité.
+                    Je maîtrise des outils tels que la Suite Adobe, Blender, Figma, et je suis
+                    toujours à l'affût d'apprendre de nouveaux outils.
+                    Lorsque je ne suis pas derrière un écran, j'aime dessiner, jouer, faire du sport,
+                    écouter de la musique.</p>
+            </div>
+        </div>
+    </section>
+    <section id="projets" class="projets">
+        <div class="container">
+            <h2>Mes Projets</h2>
+            <div class="projet-grid">
+                <div class="projet-card">
+                    <img src="assets/img/mockup illu chap.jpg" alt="Projet 1">
+                    <h3>Rebranding Alice aux Pays des Merveilles</h3>
+                    <p>Repenser l'identité visuelle d'Alice aux Pays des
+                        Merveilles (cover, back cover et 4 chapitres)</p>
+                    <a href="#" class="btn">Voir le projet</a>
+                </div>
+                <div class="projet-card">
+                    <img src="assets/img/Capture d’écran 2025-02-10 184341.png" alt="Projet 2">
+                    <h3>Créer le Visuel d'un objet dans un Art choisi</h3>
+                    <p>Création d'un objet dans le style de
+                        l'Art Superflat Traditionnel sur
+                        Fresco</p>
+                    <a href="#" class="btn">Voir le projet</a>
+                </div>
+                <div class="projet-card">
+                    <img src="assets/img/ll.png" alt="Projet 3">
+                    <h3>Imaginer le Visuel d'une Boisson</h3>
+                    <p>Créer une identité + Inclure les détails de
+                        la boisson (ingrédients, calories..)</p>
+                    <a href="#" class="btn">Voir le projet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- <section id="projets" class="projets">  Tentative Carousel
+        <div class="container">
+            <h2>Mes Projets</h2>
+            <div class="carousel">
+                <div class="carousel-item active">
+                    <img src="assets/img/mockup illu chap.jpg" alt="Projet 1">
+                    <h3>Rebranding Alice aux Pays des Merveilles</h3>
+                    <p>Repenser l'identité visuelle d'Alice aux Pays des Merveilles (cover, back cover et 4 chapitres)</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/Capture d’écran 2025-02-10 184341.png" alt="Projet 2">
+                    <h3>Créer le Visuel d'un objet dans un Art choisi</h3>
+                    <p>Création d'un objet dans le style de l'Art Superflat Traditionnel sur Fresco</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/ll.png" alt="Projet 3">
+                    <h3>Imaginer le Visuel d'une Boisson</h3>
+                    <p>Créer une identité + Inclure les détails de la boisson (ingrédients, calories..)</p>
+                </div>
+            </div>
+            <button class="carousel-control prev" aria-label="Précédent">a</button>
+            <button class="carousel-control next" aria-label="Suivant">a</button>
+        </div>
+    </section> -->
+
+    <section id="competences" class="competences">
+        <div class="container">
+            <h2>Mes Compétences</h2>
+            <div class="skill">
+                <p>Suite Adobe</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>Figma</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>Canva</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form action="#" method="post">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 . Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="assets/script/main.js"></script>
+</body>
+</html>

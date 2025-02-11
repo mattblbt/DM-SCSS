@@ -1,0 +1,190 @@
+@import 'variables';
+@import 'mixins';
+@import 'layout';
+@import 'animations';
+@import 'responsive';
+
+body {
+    font-family: $font-primary;
+    color: $text-color;
+    background-color: $background-color;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: $primary-color;
+    color: $text-light;
+    padding: 20px 0;
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+            margin-left: 20px;
+
+            a {
+                color: $text-light;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.accueil {
+    padding: 50px 0;
+    text-align: center;
+
+    img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.projets {
+    padding: 50px 0;
+
+    .projet-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+
+        .projet-card {
+            background-color: $card-background;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            .btn {
+                @include button-style;
+            }
+        }
+    }
+
+    //     .carousel {    //Marche pas
+    //         position: relative;
+    //         overflow: hidden;
+    //         width: 100%;
+    //         max-width: 800px;
+    //         margin: 0 auto;
+
+    //         .carousel-item {
+    //             display: none;
+    //             text-align: center;
+    //             transition: opacity 0.5s ease-in-out;
+
+    //             &.active {
+    //                 display: block;
+    //                 opacity: 1;
+    //             }
+
+    //             img {
+    //                 width: 100%;
+    //                 border-radius: 10px;
+    //             }
+
+    //             h3 {
+    //                 margin-top: 20px;
+    //                 font-size: 1.5rem;
+    //             }
+
+    //             p {
+    //                 margin: 10px 0;
+    //                 font-size: 1rem;
+    //             }
+    //         }
+
+    //         .carousel-control {
+    //             position: absolute;
+    //             top: 50%;
+    //             transform: translateY(-50%);
+    //             background: rgba(0, 0, 0, 0.5);
+    //             color: $text-light;
+    //             border: none;
+    //             padding: 10px;
+    //             cursor: pointer;
+    //             z-index: 10;
+
+    //             &.prev {
+    //                 left: 10px;
+    //             }
+
+    //             &.next {
+    //                 right: 10px;
+    //             }
+    //         }
+    //     }
+    // }
+
+    .competences {
+        padding: 50px 0;
+
+        .skill {
+            margin-bottom: 20px;
+
+            .progress-bar {
+                background-color: $progress-background;
+                border-radius: 10px;
+                overflow: hidden;
+
+                .progress {
+                    background-color: $primary-color;
+                    height: 10px;
+                    border-radius: 10px;
+                    transition: width 0.5s ease-in-out;
+                }
+            }
+        }
+    }
+
+    .contact {
+        padding: 50px 0;
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                margin-bottom: 10px;
+            }
+
+            input,
+            textarea {
+                margin-bottom: 20px;
+                padding: 10px;
+                border: 1px solid $border-color;
+                border-radius: 5px;
+            }
+
+            .btn {
+                @include button-style;
+            }
+        }
+    }
+
+    footer {
+        background-color: $primary-color;
+        color: $text-light;
+        text-align: center;
+        padding: 20px 0;
+    }
+}
